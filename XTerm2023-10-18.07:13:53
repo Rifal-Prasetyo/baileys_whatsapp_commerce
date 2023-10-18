@@ -1,0 +1,568 @@
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:06:58.114Z","pid":11895,"hostname":"gimler-soc
+iety","class":"baileys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clie
+ntHello":{"ephemeral":"mlDpjBErGrPHG+HwdwB6GR+YBN1FWZPUTD3OhwV+wmY="}},"msg":"co
+nnected to WA"}
+{"level":30,"time":"2023-10-18T00:06:58.453Z","pid":11895,"hostname":"gimler-soc
+iety","class":"baileys","node":{"passive":false,"userAgent":{"platform":"MACOS",
+"appVersion":{"primary":2,"secondary":2329,"tertiary":9},"mcc":"000","mnc":"000"
+,"osVersion":"0.1","manufacturer":"","device":"Desktop","osBuildNumber":"0.1","r
+eleaseChannel":"RELEASE","localeLanguageIso6391":"en","localeCountryIso31661Alph
+a2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","deviceP
+airingData":{"eRegid":"AAAAfA==","eKeytype":"BQ==","eIdent":"TgXv9lWdYVuu0Hx2ExE
+G1xeSxTjb6B4ripRgFDRstAA=","eSkeyId":"AAAB","eSkeyVal":"E01bGC511DbHHZJLtj0WQg+t
+r91znAGWEuhnpdTsNCE=","eSkeySig":"yuNsR9A/d1i193CARCPyAbIKdC4Oms7tGA2q1hOYMKGuMa
+sVZGDgT04wDRO8nNo6AwNy6vOtOJJqGVFN0UO5gw==","buildHash":"CgVgtSpHoPZPkgJcSCwM7A=
+=","deviceProps":"CgdCYWlsZXlzGAcgAA=="}},"msg":"not logged in, attempting regis
+tration..."}
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █ █ ▄ █ ▀█▀ █▄█ ▀ ▄▄▄▄   ▄▄▀▄ ▀ █▄▀ ▀██ ▄▄▄▄▄ █
+█ █   █ █ █▄▄ ▀▄▄▄▄█▄▀█  ▀▄█▄▀▀▀▀▄▀▄▄█▀▀█ ▄▀▄▀█ █   █ █
+█ █▄▄▄█ █▀ ██▄▄█ ▀▄ ▀▄█▀▄ ▄▄▄ ▄   ▄█ ▀█▄ █  ███ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄█ █ █ ▀ █▄▀▄█▄▀ █▄█ ▀ █ ▀ █ █ ▀ █▄▀▄█▄▄▄▄▄▄▄█
+█  ██ ▄▄▀▀▀▄█▄▀▀▀▀▄▄█ ▄█▀▄ ▄▄▄▀ ▀  ▄▀ █  ▀  ▄▀▀█▄▀ ▄  █
+█▀█▀ ▄▄▄▄▄▀▄ █ ▀▄█▄█▄ ▀▀█▄▄██ ▀▄▀ ▄  ▀█  ▄▄█ █▄▀▀▀██▄ █
+█▀ █▄██▄▀▄▄▄█▄▀▄▀▄▀▄█ ▀▀▄█████▄ ▄▄▀█▄▄▄ ▄█▄ █▀ ▄▄  ▀▀▀█
+█▀ █▄ ▀▄▀▄▄▄█▀▀█ █   █▄▄ ▄ ▄█▄█▄▀▀█▄▄█▄▀ ▀█ ▀▄▀▄█▀█▄ ▄█
+█ █▄▀▀▄▄█▄▀▄ ▀▄ ▄█▄ ▄  █ ▄▄▀▄█▀▀▄▄▀▄ ▄▄  █▀ ▄  █▀ ▀█ ▄█
+███  ▀█▄▀▄ ▀█▄█ ▀ ▀▀ █▄▄ ▄ ▄█  █ █ ▀▄█▀█▄█ █ ▀▀▄██ ▄█▄█
+█ ▀▄▄▀▀▄▀▀  █▄▀▄ ▄ ▄█ ▀▀█▄█▀▀   █ ▀▄▄ ▄  █▀ █ ▀█▄  ▀█ █
+█▀▄   █▄ █▄ ▀ ▄  ██▀█▀▀ ▀▄▀█▀ ▄ █▄▀▀▄▀█▄ ▄ ▀▄▀▀▀▀▄ █▀▄█
+█  ▀▀ ▄▄▄ ▄▄▄▀▀▀▀▀▄▄▄▀▄▀▄ ▄▄▄ ▀ █  ██ ▄▀▄█    ▄▄▄ █▀▄ █
+█▄▀▀█ █▄█ ▄▄ ▀ ▀▄█▄▄ ▄ ▄█ █▄█ █▄█  ▀█▀█ █▄▀▀▄ █▄█ ▀█  █
+█▄▄▀▄ ▄▄▄  ██▄▀ ▀▄▀▄▀▀▄▀  ▄ ▄ ▀ ▀  ▄  ▄▀▀▀▀ ▀▄▄   ▀████
+██ ▀▀▀▀▄▄ ▄ ▀▄▀█ ██ ▄█ █ ▀██▀▀█▄▄▀▀█▄ █ ▀ ▀▄▄ █  ▄▀▄█ █
+█ █▀▀▀█▄█ ▀▀▀█▄ ▄█▀▄█▀▀▀▀▀▀ ▄  ▀█▄▀▄▀▄█▀ ▀▀▀ ▄▄▀█▀ ▄▄██
+█▀▀▄▄▀▄▄▀   ██ █▀ ▀▀  █▄▄ █▄▄ ██  ▄ ▀ ▄█▀   █▀▄▄█▀▀▄▀▄█
+█▀█▀ █ ▄█ ▀ ▄▀█ ▀█  █▀▄███▀ █  ▀▀ ▀█▄▄ ▀ ██   ▄▀  ██▀██
+█▄▀  ▀▄▄▀█ ▀▀ ▄  ▀█▄ ▄ ▄ █▄▀ ▀ █▄▄▄  ▀ ▄▀ █  ▀▀ ▄▄█▄█ █
+████▀▀ ▄ █▀▀▀█▀▀▀▀█ ▄▀▀▀ █▀  ▄▀ ▀ ▀▄▀ ▄▀▄▀ ▀▄█▀▄▄▀▄▀▀ █
+█▄ ▀▄▄▄▄  █▀▄▄▀█▄█  █▀▀█▄▀ ▄▄▀█ █   █▀▀█▀▀ ██▀▀▄▀▀▀█▄ █
+████▄██▄▄ █ ▄ ▀▀▄▄▀▄█▀▄█▀ ▄▄▄   ▄  █▄ ▄▀▄█▀▀  ▄▄▄  ▄█ █
+█ ▄▄▄▄▄ █▀▀ █▀▀ █▀▀   ▀ █ █▄█  █▄▄▄▄█▀▀█ ▀▄▀█ █▄█  ▄█ █
+█ █   █ █▄█▄█▀▀▄▄█▄▀█ ▄█▀ ▄ ▄▄▀▀█▄▄▄▀  ▀ ▀ ▀█ ▄  ▄▀▀ ██
+█ █▄▄▄█ █▀█  ▄ ▄▀ ▀█ █▀█ ▄▄█▀ ▀▀▀  ▀▄▀▄▄██▄▄▄█▄ ▄▀▀▄▀▀█
+█▄▄▄▄▄▄▄█▄▄█▄▄▄▄██▄▄▄█▄█▄▄██▄███▄▄▄██▄▄█▄█▄▄██▄▄█▄█▄▄██
+
+^C
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:07:29.354Z","pid":11906,"hostname":"gimler-society","class":"baile
+ys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clientHello":{"ephemeral":"sh1f6T8yo88UKl71R
+zXB7at/CH9YtkXCdDPwwwYKPwg="}},"msg":"connected to WA"}
+{"level":30,"time":"2023-10-18T00:07:29.619Z","pid":11906,"hostname":"gimler-society","class":"baile
+ys","node":{"passive":false,"userAgent":{"platform":"MACOS","appVersion":{"primary":2,"secondary":23
+29,"tertiary":9},"mcc":"000","mnc":"000","osVersion":"0.1","manufacturer":"","device":"Desktop","osB
+uildNumber":"0.1","releaseChannel":"RELEASE","localeLanguageIso6391":"en","localeCountryIso31661Alph
+a2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","devicePairingData":{"eRegid
+":"AAAA0Q==","eKeytype":"BQ==","eIdent":"s/B8wyTFTQgEyD2UbmcI8Ij53JuHoVTVZbjDjZFL2Fo=","eSkeyId":"AA
+AB","eSkeyVal":"KLiqdNB/baCJo+imMsckmZun6Pn56NtLD/hX2dJLBjY=","eSkeySig":"y1bFurIdmoWDKKoi+in3KCVH6+
+c84A4381XQkObwdD9rFwQoq+k9REnSYxvvCLSkCL82qDRACpsdrJwWfUFpDg==","buildHash":"CgVgtSpHoPZPkgJcSCwM7A=
+=","deviceProps":"CgdCYWlsZXlzGAcgAA=="}},"msg":"not logged in, attempting registration..."}
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▄▄ ▀▀ ▀ ███ ▀ █▄▄ ▀ ▄▄▄▀ ██▄▄▄█▀▀▄ ▀██ ▄▄▄▄▄ █
+█ █   █ █ ▀▀▄  ▄█ ▄▀▀ ▄█▄▄█▀▄▄▀█ █▀▀▀ ▀█ █▀▀▄▀█ █   █ █
+█ █▄▄▄█ █▄█▄▀ █▀▀▀▀ ▄▄█ █ ▄▄▄ ▀█▀  ▀ ██ █▄▄ ███ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄▀▄▀▄█▄█ █ █▄▀▄▀ █▄█ ▀▄▀ ▀ ▀▄▀▄█ █▄▀ █▄▄▄▄▄▄▄█
+█▄ ▄▄▀▀▄▀▄▀▄▄██▄█ ▀█ ▄ ▄▀▄  ▄ █ ▀▀█▄▄▀ ▄▄ ▀ █▄▄██▄  █ █
+█▀▄ █▀ ▄ ▀█▀▀ ▄▄▀▄▄▀ ▀▀█ ███▀█▀▄█▄█▄▄▄▀▄█▄ ▄▀  ██▀██▄▀█
+█▄▄▄ ▄▀▄▀▄▀█▄▀▄▀▀██ ▄ █▀ █▀ ▄██▄▄▀ ▄    ▀█▄▄▀ ▀▄█ █ █▀█
+█▀ ▄▀ █▄▄▄██ █ ██▄▀ █▄ ▀█ ▀█▄▄▄▄▀█▀▄▀▄ ▀▀█  ██▀▄█▀▀█▄ █
+█ █▀▀  ▄ ▄▄▀ ██▄▄▀▄▀█▄▄█▀▀▄▀█  █    ▄▀▄▄▄█▀█ ██▀█▀ █▄ █
+█▀▀▀ █▄▄▀ █▄▄▄█▄██▄▄▄▀▄▀▄▄  ▀█ █▀▄▀█▀ ███▄▀ ▄▄█▄█ ▄ ▀██
+█▀ ▄▀▀▀▄▄ ▀██ ██▄▄ ▀▀█    █▀▄   ▀▀██▄█ ▄ ▄ ▀▀█▀█▄▀█▄▀ █
+█▀█▀  █▄▄▄▀ █  ▀▀█▀ ▄█▀▀█▄▄▄▄█▄████▀ █▄██▄ ██▄▄ █ ▄█▄██
+█▀▄▀▄ ▄▄▄  ▀▀▀▄  ▀▄▄▀▀█▀  ▄▄▄ ██ ▀ █▄ ▀ ██▄▄▀ ▄▄▄ █▄▀██
+█ ▀▄█ █▄█ ▀▄▀▀▀ █▀ █▄▀ ▄  █▄█ ▄ ▄▄█ ██▀▄▄▀▀▀▄ █▄█ ▀█ ▄█
+█▄█ ▄▄ ▄ ▄▄▄███ ▀ █▀ █ ▀█ ▄ ▄▄ ▄  █▀█▀▄▄▀▀▄██ ▄▄ ▄█▄▀██
+██▄█▀██▄ █  ▀▀▀▀▄ █▄█▀ ▄▀▀▄▀▀█▄▄▀▀▀▄▀█▀▀▄▄ █▄▄█▀▀█▀ ▄██
+█▄▄▀ ▄▄▄▀▄ ▀▀  █ ▄▀█▀█  ▀  ▀ █ ▀▀▀█▄ ▀▀█  █  ▀▀██ ▀▀▀██
+██▄▄ ▄▄▄█ ▀▀▀█▀▄▄▀█  ▄██▄▄  ▀▀▄▀▄ ▄  ▄▀▀█ █▄▀  █▀▀▄▄▄██
+██▀ ▀▄█▄▀▄▀▀█ ▄█ ▄▄▄ ▀████▀█▀▄▀▄█▀ ▄  ▀▀▀▀███ ███▄█▀ ▀█
+██▄▄ ▀▄▄  ▄██▄█ █▄   ▄ ▄▀█ ██▄▄ █▄▀ ▄▀▄ █  ▀▄▀█ ▀▀▄█▄ █
+█ ▀█▀█▀▄██▄▀▄  █▀█▄█ █▄▀▄ █  ▀ ▄▄▄ ▀██▄▄▄▀▀▄▀  ██▄ ▀▀██
+█▄ ▀▄▄▄▄█▄▄█▀█ █  █  ▄▀▄█▀███▄████▀▄██▀▄▄ █▄▀▄▀▀▄█   ██
+████▄██▄█  ▄▄▀ ███ █▀█  ▀ ▄▄▄ ▄▀ ███▄▀▀▄▄▄ ▀▄ ▄▄▄ ▀▄█▀█
+█ ▄▄▄▄▄ ███▄▄█▀█  █ ▄██ █ █▄█ ▀▄▄▀█▄▀█   ▄ ▄  █▄█ █▄▀▀█
+█ █   █ █▀▀█ ██▄██ ██ ▀▀█▄▄ ▄ ▄▄▄▀▄█  ▀ █▀▄█▀  ▄  ▄▄ ▄█
+█ █▄▄▄█ █ ▀▀ █▄▀ ▄█▄█▀▄█ █▀▄▀▄▄█▀▀▄▀ ▀▀▄▀ ▄▀▀█▀█▄▀ ▄ ██
+█▄▄▄▄▄▄▄█▄▄▄▄█▄█▄████▄▄█▄█▄█▄█▄██▄▄▄████▄█▄▄██▄▄▄███▄██
+
+^C
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:08:35.643Z","pid":11929,"hostname":"gimler-society","class":"baile
+ys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clientHello":{"ephemeral":"LS72czNx3RuFEmIDt
+z2ECwacVPAvjTVmTpd87wRlZUY="}},"msg":"connected to WA"}
+{"level":30,"time":"2023-10-18T00:08:35.902Z","pid":11929,"hostname":"gimler-society","class":"baile
+ys","node":{"passive":false,"userAgent":{"platform":"MACOS","appVersion":{"primary":2,"secondary":23
+29,"tertiary":9},"mcc":"000","mnc":"000","osVersion":"0.1","manufacturer":"","device":"Desktop","osB
+uildNumber":"0.1","releaseChannel":"RELEASE","localeLanguageIso6391":"en","localeCountryIso31661Alph
+a2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","devicePairingData":{"eRegid
+":"AAAAKg==","eKeytype":"BQ==","eIdent":"pN4N/goRsF1Hg1aQwObQEUxGdkcp2n2z0xt2ucaQwSQ=","eSkeyId":"AA
+AB","eSkeyVal":"IE4ro+So6ZUuF/Udf4kaOX0s8+ra+hXk5IAxeQbLwBE=","eSkeySig":"VszXOBFACQXY1++KY3FM0vfb7G
+n0rxnRSMCt6lMrguoSGPSJWmrqSVXFa2YWC+G0Vy4YG1XCuHtMpPViMPwVhg==","buildHash":"CgVgtSpHoPZPkgJcSCwM7A=
+=","deviceProps":"CgdCYWlsZXlzGAcgAA=="}},"msg":"not logged in, attempting registration..."}
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▄  ▀▀ ▀ █ █▀▀ █▄  █ ▄ ▄█ ██▄█▄▀▄▀█ ▀██ ▄▄▄▄▄ █
+█ █   █ █ ▀██▄▀▄█ ▀ ▄ ██  ██▄▄ █ █▄▄  ▀▀█▄▀▀▄▀█ █   █ █
+█ █▄▄▄█ █▄ ▀▄▀▄▀▀▀█   █▄█ ▄▄▄ ▀█ ▀▄█▄▄  ██▄ ███ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄█ ▀▄█▄▀ █▄█ ▀▄▀ █▄█ ▀▄▀ ▀ █ ▀▄▀ █▄█ █▄▄▄▄▄▄▄█
+█ ▄ ▄▀█▄█▄█▀▄██▄█  █ █▄ ▀▄    ▀ ▀▀ █▄█▀██ ▀▀ ▄ █▀ ▄▄▀ █
+█▄▄▄▀▄▄▄▄█▄█▄▀▄▄▀▄██▀ ▄▄ ▄██ █ █ ▀▄ ▀ █▄ █▄ █▀▀▄▄▄█▄▄██
+█ ▄▄▄▀▄▄█ ▄▀ ▄ ▀ ██ ▀ █▀█ ▄▄ ▀▄█ █▀▄▀▄▀▀▀██▄▄ ▄▄ ▄▄█▀ █
+█ ███▄▄▄▀██ ▀  █ ▀ ▀▀▀█ █  ▄▄▄▄▄██▀█▄▀ ▄  █  ▄ ▀▀█▄█  █
+█▄▄▄██ ▄ ▀██▀██▄▄▀▀█▄█▄█▀▀ ▀ █▀▄▄ ▄▀█▀▄▄▄█ ▄█▄▄ █▀▀██▄█
+██▀ █▄▄▄▀ ▄ ██ ███▄ ▀▀█ ██▀ ██ ▀▄▀█▄▄ █▄ ████ ▀▄▄▀█ ███
+█ █    ▄ ▀ █▀███▀███ █ ▄▄▄█▀█▀▀▀▀█▄▄▄▀▀▄▄▄▄  ██▄▄▀▄ ▀▀█
+█▄▀▀▀ ▄▄█  █ ▀ ▀▄█ ▀ ▄ ██▄▄▄ ▀▀█▄ ▄▀▄ ██▄▀█▄ █▀▀█ ▄█▄██
+██▄▀▄ ▄▄▄ ▄ ▀ ▄  ▀   ▀▀█  ▄▄▄ ▄█ ▀ ▄ ▄▄▀██▄▄▀ ▄▄▄ ▀████
+█  ▄▄ █▄█  █▀▀▄▄█▀ ▄█▄▀▀  █▄█ ▀  ▀ █▀██▄ ██ █ █▄█ ▀▄ ▄█
+█ ▀▄▄ ▄▄ ▄███▀  ▀  ▀▄▄ ▀   ▄▄▄▀▄▀▄ ▀██▄█ ▀▀█▄ ▄  ▄█▀███
+█▄▀ ▀█▀▄   ▀██▀▀ ▄▄▀▀  ▄███▀ ██▄ ▀█ █ ▄ ▄▀██▀▄█▀██▀ █▀█
+█ ▀██▄ ▄▄██▀▀▀ █ ▄▀█ ▄ ▄  ██▀ ▄ █▀▄▄▀█ ▄ ▄   █ ▀█ ▄▄ ██
+█▀▄▄  █▄█▄▄▄█▀▄▄▄▀ ▄▀▄▄▀  ▄▀▀▀▀▄▄   ▀▀▀█▀ ▄▄█ ██▀▀▄█▄██
+█ ▄▀▀█▄▄▄█▀ ▄█▄█ █ ▄▀▀█▀▀ ▄█ ▄███▀▀▄▀ █▀█▀▄▄█ █▄▄▄█▄▄██
+█▄▀ █ ▄▄ ██   █      █▄██ ▀ ▄▄█ ▀  ▄█ █ █ ▄██  ▄█▀▀▄ ▄█
+█▄██ ▄ ▄▄ ▄▀█▄ █▀█▄█ █▄█▀ █ ▀▀▀▄█▄▀ ███▄▀█▀██▀ ▄█▄▄█▀▄█
+█▄ ▀▄▄▄▄▄▀▀▄ ▀▄▄  ▄█▄█▄▄▀  █▀▄▄▄█▄███▀█▀▄ ▀█▄▄█▀▄█▀▀ ██
+████▄██▄▄▀ ▄█▄▄▀██▄█▀▄ ▄▀ ▄▄▄  ▀ █▄█▄█ ▄▄  ▀▄ ▄▄▄ ▄ █▀█
+█ ▄▄▄▄▄ ███▀▀ █▄ ▄█ █▀█ █ █▄█ █▀▄▀▄▀ █▀▀▄▄▀▄  █▄█ ▀████
+█ █   █ █▀▀▀ ██▀██ █▀▀██▀   ▄▄▀█ ▀▀█▄▄ ▀ █ █▄▄  ▄ ▀ ▀██
+█ █▄▄▄█ █ ▀▀▀██▀ ▄█▄▄▄██▀▀ █▀▄▄  ▀▀▄ ▄ ▀ ▄  ▀▀██▀█▀▄ ██
+█▄▄▄▄▄▄▄█▄█▄█▄████████▄████▄▄█▄██▄▄█▄███▄██▄▄▄██▄▄██▄██
+
+^C
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ 
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:09:32.342Z","pid":12137,"hostname":"gimler-society","class":"baile
+ys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clientHello":{"ephemeral":"0HCeOJQ9kFAdo3+mP
+lqBZ8hrmbG/FmPEQOrmOr4pOQU="}},"msg":"connected to WA"}
+{"level":30,"time":"2023-10-18T00:09:32.715Z","pid":12137,"hostname":"gimler-society","class":"baile
+ys","node":{"passive":false,"userAgent":{"platform":"MACOS","appVersion":{"primary":2,"secondary":23
+29,"tertiary":9},"mcc":"000","mnc":"000","osVersion":"0.1","manufacturer":"","device":"Desktop","osB
+uildNumber":"0.1","releaseChannel":"RELEASE","localeLanguageIso6391":"en","localeCountryIso31661Alph
+a2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","devicePairingData":{"eRegid
+":"AAAAOQ==","eKeytype":"BQ==","eIdent":"M7uCJLW3NSAwwq24+ewOWbIY9hjp5kWqw+OOK90Mjjc=","eSkeyId":"AA
+AB","eSkeyVal":"INPs+bVnRAzEwJSNLma7NP3opYxdJzOg6xv6xaDcJ2g=","eSkeySig":"bkBU4JN7xaEP90TVnDAvoOtZA6
+OJ4twRBXY4fJKeDjBo8OKG03+8fj017FueenQFbxN0dPRjsI20dkxYs9H+gg==","buildHash":"CgVgtSpHoPZPkgJcSCwM7A=
+=","deviceProps":"CgdCYWlsZXlzGAcgAA=="}},"msg":"not logged in, attempting registration..."}
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀█ █  ▄█ ▄█▄▄ ▄▄ ▀ █ ▄ ▄  ▄ ▄▄ ▀██ ▀██ ▄▄▄▄▄ █
+█ █   █ █▄ ▄█ █▄▀▄███▀██ ▄▄█ ▀▄█ ▄█▀▄▄█▄▄▄▄▀▄▀█ █   █ █
+█ █▄▄▄█ █ ▀ ▄▄▄▄▄██▄ ▄ █▄ ▄▄▄ ▄▄ ▄█▀ ▀▄▄ ▀  ███ █▄▄▄█ █
+█▄▄▄▄▄▄▄█ ▀▄▀▄█ █ █▄▀▄▀ ▀ █▄█ █▄█▄█ ▀▄█ █ ▀ █▄█▄▄▄▄▄▄▄█
+█ ▄▀▄██▄▄██▄▄█ ▄█ ▄ ▄▄ ▄▄ ▄  ▄▄▄▄██▄▀▄▄█▄▄▄▄██▀▄ ▄▀▄ ▀█
+█▀▄█ ▀▀▄▄ █▄ ▀█ █ ▄█▄▀▄█▀██▀ █▄▀▄▄▀▀▄▄▀▄▀▄ ██ ▄▄▀  ▀▀▀█
+██▄▀▄█▄▄█ ▀ ▀█  █▀▄ ▀▄▀▄ █▀▄▀▄██    ▄  ▄ ▄▄█▀▄▄▀█▄▄▀▀ █
+█▀▄▄▀█ ▄▀▀█ ████▀ ▄ ██▄█ ███ ▄ ██▄▄▀█▀█▄█ ▀█ ▄ ██▀▄▄▄ █
+██▀▄ ▄█▄  ▀▄▀▀▄  ██ ▀▀ ▀  ▀▄▄█▀▄█ ▄█▄  ▀ ▀ ▄█ ██  ▄▀▄ █
+█ █▄▄▀ ▄▀▄█▄▀█ ▄   ▄ ▀████▀▄ ▄▄▄█▀  ▀▄█▀ ▄██ █▄ ▀█ █▄ █
+█▄▄█▄▀▀▄▄▄ ▀▀ ▄▀██▀▄██ ▄▄ ▀▄█ ▄██▀█▄█ ██▄ ██▄█▄▄▀▄▄  ▀█
+█▄▄▀██▀▄▀▀▀ ▄▄▀█ ▀ ▀ █▀ ▄█▀▀▀▀▀▄  ▀██▀▄█▄▀▄▀▄█▀█▄▀█ █▀█
+█ ▀   ▄▄▄ █ █▀▄██▄  ██    ▄▄▄ ▄▄ ▄▄  ▄ █▄ █▄▀ ▄▄▄ █ ▀██
+█▄ ▀█ █▄█ ▀  ▄ ▀█▀█ █▀ ██ █▄█  ▀▀▄▄▀▀ ▀ █▄ ▄  █▄█ █▄ ▄█
+█▀▄▄▀  ▄▄▄█   █ ▄▄▄▄█▀█▀█ ▄▄▄▄▀██ ▄█▀ ▄▀▄▀▄▄▀  ▄▄▄▀▄▀██
+█▄▄█▀▄▄▄ █▀▄▄▄▀▄▀ █▀▄ ▀▄▀█▄█▄▀▀▄█▄█▀▄ ▄█▄█▄██   █▀▀▄ ▄█
+█▄█▄ ▄█▄  █▄▄███ ▄▄ ██▄▄▄█▄█▄ ██▄▀█▄ ▄█▄▄▄███▄█  █▄▄ ▄█
+█ ▄█▀▀ ▄▄ ▄▄▄ ▀  █▄▀██▀███▀  ▄█▄▄▄▀▀▀▀▀▀ █▄▄ ▄ █   ▀ ▀█
+█   ▀█ ▄▀█ ▄█ ▄  ▀▄ ▀▄▄▄▀   ▄█ █▄▄█▀▄▄█▄▄▄▀██  ███▄█▀ █
+█ ▄▄▄▄▀▄▄▀▀▄█▀    ████▀ ▄▄████ ▀▄ ▀▀▄  ▄▄ ███▄▄▄▀▄ █▄▄█
+█▄▀▀▀▀█▄▀▀█ ▄▀▀▀█▀█▄▄ █▀▄ █  ▀▀█▄ ███ ▄ ██ ▄▄█▀ ▄██▀█ █
+█▄ ▀▄▄▄▄ ▄███▀▀▄██  ▄█▄▄█▄▄ ▀▀▄ ▄ ▀█▄ ▀█▄▄██▀   ▄▄ ██ █
+████▄██▄▄ ▄▀▀█▄▄ ██▄▄█▀ █ ▄▄▄ ▀██████ ▄█▄▄ ▄█ ▄▄▄ ▀▄███
+█ ▄▄▄▄▄ █▄▀▀▄▄██ █▄▀██ ▀▀ █▄█  █▀▀█    ▀ ███▄ █▄█ █  ▀█
+█ █   █ █▀ ▄▀▀█▄   █▀▄▄▄▀  ▄▄ ▄▄▄▄█▀▄▄ █ ▄██▀▄ ▄▄ ▄ ▄▀█
+█ █▄▄▄█ █▀▀█▄  █ ▄▀ ▀ ▄▀█ ▄▄▄  ▀█  █▄█ ▀▀  ▀ █ ▄  ██ ██
+█▄▄▄▄▄▄▄█▄█▄▄▄▄▄█▄▄▄▄▄▄█▄▄▄▄██▄▄▄▄▄▄▄▄██▄█▄███▄▄███▄▄██
+
+{"level":30,"time":"2023-10-18T00:09:36.242Z","pid":12137,"hostname":"gimler-society","class":"baile
+ys","me":{"id":"6285641616352:3@s.whatsapp.net","name":"Lempita"},"platform":"smba","msg":"pairing c
+onfigured successfully, expect to restart the connection..."}
+{"level":50,"time":"2023-10-18T00:09:36.546Z","pid":12137,"hostname":"gimler-society","class":"baile
+ys","node":{"tag":"stream:error","attrs":{"code":"515"}},"msg":"stream errored out"}
+{"level":30,"time":"2023-10-18T00:09:36.547Z","pid":12137,"hostname":"gimler-society","class":"baile
+ys","trace":"Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (/home/gim
+ler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:5
+01:13)\n    at WebSocketClient.emit (node:events:513:28)\n    at /home/gimler/Desktop/application/ba
+ilyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:236:35\n    at Object.decod
+eFrame (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/U
+tils/noise-handler.js:136:17)\n    at WebSocketClient.onMessageRecieved (/home/gimler/Desktop/applic
+ation/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:212:15)\n    at Web
+SocketClient.emit (node:events:513:28)\n    at WebSocket.<anonymous> (/home/gimler/Desktop/applicati
+on/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/Client/web-socket-client.js:46:1
+00)\n    at WebSocket.emit (node:events:513:28)\n    at Receiver.receiverOnMessage (/home/gimler/Des
+ktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/node_modules/ws/lib/websocket
+.js:1192:20)\n    at Receiver.emit (node:events:513:28)","msg":"connection errored"}
+connection closed due to  Error: Stream Errored (restart required)
+    at WebSocketClient.<anonymous> (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@
+whiskeysockets/baileys/lib/Socket/socket.js:501:13)
+    at WebSocketClient.emit (node:events:513:28)
+    at /home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/So
+cket/socket.js:236:35
+    at Object.decodeFrame (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeyso
+ckets/baileys/lib/Utils/noise-handler.js:136:17)
+    at WebSocketClient.onMessageRecieved (/home/gimler/Desktop/application/bailyes-commerce/node_mod
+ules/@whiskeysockets/baileys/lib/Socket/socket.js:212:15)
+    at WebSocketClient.emit (node:events:513:28)
+    at WebSocket.<anonymous> (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiske
+ysockets/baileys/lib/Socket/Client/web-socket-client.js:46:100)
+    at WebSocket.emit (node:events:513:28)
+    at Receiver.receiverOnMessage (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@w
+hiskeysockets/baileys/node_modules/ws/lib/websocket.js:1192:20)
+    at Receiver.emit (node:events:513:28) {
+  data: { tag: 'stream:error', attrs: { code: '515' }, content: undefined },
+  isBoom: true,
+  isServer: true,
+  output: {
+    statusCode: 515,
+    payload: {
+      statusCode: 515,
+      error: 'Unknown',
+      message: 'Stream Errored (restart required)'
+    },
+    headers: {}
+  }
+} ,  
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:09:45.077Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clientHello":{"ephemeral":"uhO7jfshPJ1L77Lpk
+V0jGUobfizIhjFAytIR0JYnSlk="}},"msg":"connected to WA"}
+{"level":30,"time":"2023-10-18T00:09:45.330Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","node":{"username":"6285641616352","passive":true,"userAgent":{"platform":"MACOS","appVersion":{
+"primary":2,"secondary":2329,"tertiary":9},"mcc":"000","mnc":"000","osVersion":"0.1","manufacturer":
+"","device":"Desktop","osBuildNumber":"0.1","releaseChannel":"RELEASE","localeLanguageIso6391":"en",
+"localeCountryIso31661Alpha2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","d
+evice":3},"msg":"logging in..."}
+{"level":30,"time":"2023-10-18T00:09:46.034Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"0 pre-keys found on server"}
+{"level":30,"time":"2023-10-18T00:09:46.035Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","count":30,"msg":"uploading pre-keys"}
+{"level":30,"time":"2023-10-18T00:09:46.385Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","count":30,"msg":"uploaded pre-keys"}
+{"level":30,"time":"2023-10-18T00:09:46.629Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"opened connection to WA"}
+opened connection
+{"level":30,"time":"2023-10-18T00:09:46.670Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"handled 0 offline messages/notifications"}
+{"level":30,"time":"2023-10-18T00:09:50.360Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","newAppStateSyncKeyId":"AAAAAD/7","newKeys":["AAAAAD/8","AAAAAD/6","AAAAAD/7"],"msg":"injecting 
+new app state sync keys"}
+{"level":30,"time":"2023-10-18T00:09:53.040Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"doing initial app state sync"}
+{"level":30,"time":"2023-10-18T00:09:53.041Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"NxNmy97OHVTpvjaj19/Vo++VySfHtgIDK0kiyd3fjo8=","fileLength":"10
+","mediaKey":"ppAzjJVJzMagFB31ClFgkJgbWkq/cxOoLvb3pyp8UX0=","fileEncSha256":"z65N2mQcqX6u8eLCYfvDy/0
+ZD6sICzBtZ69VBDbscfo=","directPath":"/v/t62.31111-24/30910221_1418691915379996_6800855567147995108_n
+.enc?ccb=11-4&oh=01_AdTC5cLrD6Gn1MnVUzvJF8EfAAOs00zf7HkCtn_u08Tllw&oe=6556ABD2&_nc_sid=000000","sync
+Type":"NON_BLOCKING_DATA"},"process":false,"id":"24077074FB1EEFD523B8AA7F1B8B018D","isLatest":true,"
+msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:09:53.042Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing critical_block from v0"}
+{"level":30,"time":"2023-10-18T00:09:53.043Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing critical_unblock_low from v0"}
+{"level":30,"time":"2023-10-18T00:09:53.043Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular_high from v0"}
+{"level":30,"time":"2023-10-18T00:09:53.044Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular_low from v0"}
+{"level":30,"time":"2023-10-18T00:09:53.045Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular from v0"}
+{"level":30,"time":"2023-10-18T00:09:53.902Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced regular_high to v2"}
+{"level":30,"time":"2023-10-18T00:09:53.904Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"restored state of critical_block from snapshot to v2 with mutations"}
+{"level":30,"time":"2023-10-18T00:09:53.909Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced critical_block to v4"}
+{"level":30,"time":"2023-10-18T00:09:53.915Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"restored state of regular_low from snapshot to v2 with mutations"}
+{"level":30,"time":"2023-10-18T00:09:53.920Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced regular_low to v4"}
+{"level":30,"time":"2023-10-18T00:09:53.929Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"restored state of regular from snapshot to v4 with mutations"}
+{"level":30,"time":"2023-10-18T00:09:53.946Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced regular to v10"}
+{"level":30,"time":"2023-10-18T00:09:53.974Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"restored state of critical_unblock_low from snapshot to v4 with mutations"}
+{"level":30,"time":"2023-10-18T00:09:53.978Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced critical_unblock_low to v6"}
+{"level":30,"time":"2023-10-18T00:09:53.983Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"archive setting updated => 'false'"}
+{"level":30,"time":"2023-10-18T00:09:53.994Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"Dkz0UDP7mcehngS0gGsvG5+AMt/EXgSRgfazdoKo/ME=","fileLength":"10
+","mediaKey":"FQUtFv8NRmMkiY+Yn8y/7Vrp0lr4u019TdpZ5qgn/rs=","fileEncSha256":"1is29lkPD7VhKyUk4E792uI
+xnmsda1QAOdCFbpYBe6k=","directPath":"/v/t62.31111-24/30588056_1031910691485856_2573447386625849774_n
+.enc?ccb=11-4&oh=01_AdTrvukZ3JPjvK2UhKO_ekYnqlpQQBZ38MKybq1NRSdv7A&oe=6556A1BF&_nc_sid=000000","sync
+Type":"INITIAL_STATUS_V3"},"process":false,"id":"75D1987E8A7C95F1E423B7D6613C18D1","isLatest":true,"
+msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:09:53.998Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"9sc0AG6SKcCIq8gxFfbUvO3fj2yVkur2qYRXYCTnFZ0=","fileLength":"13
+5","mediaKey":"LyVpdswxg1cSjq1T//2wmlkEgaRoSzKhFy6JYw/WZIM=","fileEncSha256":"UQWqCCHKiwwjGx4EZz2gYR
+zeabrm97reauBY9jxrEjY=","directPath":"/v/t62.31111-24/33426673_1034153111344821_1233204047980860486_
+n.enc?ccb=11-4&oh=01_AdQrWLKL0BMQw56GEPdldKGmYhE7ctrB2cHufq36ogWEFA&oe=6556A9A4&_nc_sid=000000","syn
+cType":"PUSH_NAME","chunkOrder":1},"process":true,"id":"F74606F5D13B267AD267B3BF003EB610","isLatest"
+:true,"msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:09:56.716Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"OscjXtm86BpZhZGNxy592Yn+Ss3cOgthOwugRxH5cl4=","fileLength":"43
+56","mediaKey":"Mc2a7+yxOOimL0t7a0+ZP6Oz9ZAtuc7HJS8MmvVSvnE=","fileEncSha256":"/q2VumHXR45QwmxxqBfUm
+n/vFjRsNs1y8oDBx0UB4kk=","directPath":"/v/t62.31111-24/33420948_703929431222846_7556327055832991857_
+n.enc?ccb=11-4&oh=01_AdT2nZ3O9pqDBcDV3OTcvbGiS_pqHEuvSHLqxbFjfJ0HFg&oe=6556838C&_nc_sid=000000","syn
+cType":"INITIAL_BOOTSTRAP"},"process":true,"id":"56B186FF907E7C9B03F226DBBC6CDC76","isLatest":false,
+"msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:09:57.020Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","newAppStateSyncKeyId":"AAAAAD/9","newKeys":["AAAAAD/9"],"msg":"injecting new app state sync key
+s"}
+{"level":30,"time":"2023-10-18T00:09:58.166Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular from v10"}
+{"level":30,"time":"2023-10-18T00:09:58.441Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced regular to v11"}
+{"level":30,"time":"2023-10-18T00:10:01.188Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"yCVde/JwmfHfH6cOcxIH8EP0PFcl/CPekcgicLWWsm0=","fileLength":"81
+46","mediaKey":"GeO8VZx3xL+rHMW4FY+KeqiWQA0oRiyQvKdDrkmylDg=","fileEncSha256":"SzlO4Rtp6UJMylNitT6ro
+YK0+U45wc23OSszK8IXJUE=","directPath":"/v/t62.31111-24/34835276_703379881276531_4596914444717221249_
+n.enc?ccb=11-4&oh=01_AdS-5oQi1OO9sPxBFeNTeK5JeUh-D16gKflLHuV_RyIscg&oe=655687E9&_nc_sid=000000","syn
+cType":"RECENT","chunkOrder":1,"progress":100,"oldestMsgInChunkTimestampSec":"1685857098"},"process"
+:true,"id":"4F56501A6DEE57209B312C0B3EF10BE7","isLatest":false,"msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:10:02.031Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular from v11"}
+{"level":30,"time":"2023-10-18T00:10:02.321Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msg":"synced regular to v12"}
+{"level":30,"time":"2023-10-18T00:11:15.563Z","pid":12149,"hostname":"gimler-society","class":"baile
+ys","msgAttrs":{"from":"6283109895990@s.whatsapp.net","type":"text","id":"A70F8F9CAB6A32E48CFF067A98
+8F2EA8","sender_lid":"131614994612351_1@s.whatsapp.net","notify":"https://rifalkom.my.id","t":"16975
+87875"},"retryCount":1,"msg":"sent retry receipt"}
+file:///home/gimler/Desktop/application/bailyes-commerce/index.js:30
+                const pesan = messages[0].message.conversation;
+                                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'conversation')
+    at EventEmitter.<anonymous> (file:///home/gimler/Desktop/application/bailyes-commerce/index.js:3
+0:51)
+    at EventEmitter.emit (node:events:513:28)
+    at EventEmitter.<anonymous> (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whi
+skeysockets/baileys/lib/Utils/event-buffer.js:40:16)
+    at EventEmitter.emit (node:events:513:28)
+    at Object.flush (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/
+baileys/lib/Utils/event-buffer.js:73:16)
+    at processNodeWithBuffer (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiske
+ysockets/baileys/lib/Socket/messages-recv.js:655:12)
+
+Node.js v18.16.1
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:12:30.086Z","pid":12220,"hostname":"gimler-society","class":"baile
+ys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clientHello":{"ephemeral":"aF8PfiWVvDMyX3mXZ
+TD2GYBufotyHv8JujWf9Th56kM="}},"msg":"connected to WA"}
+{"level":30,"time":"2023-10-18T00:12:30.414Z","pid":12220,"hostname":"gimler-society","class":"baile
+ys","node":{"passive":false,"userAgent":{"platform":"MACOS","appVersion":{"primary":2,"secondary":23
+29,"tertiary":9},"mcc":"000","mnc":"000","osVersion":"0.1","manufacturer":"","device":"Desktop","osB
+uildNumber":"0.1","releaseChannel":"RELEASE","localeLanguageIso6391":"en","localeCountryIso31661Alph
+a2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","devicePairingData":{"eRegid
+":"AAAARw==","eKeytype":"BQ==","eIdent":"KKdkbrY8a1cCIMxmgtQ3scrumF2yxWFviCUbubdfIDk=","eSkeyId":"AA
+AB","eSkeyVal":"0kaju26Nl8p0/Vf4Hu2BxHi+y3OMnaEnQhlilGbrnlA=","eSkeySig":"rzOgWb9+qtwGmVZsfBkaMROq80
+Qiy5tZw3/uZVXUb2kC8T6KPU0Lsk76PcgCO7ti0PDnBRtq0ZtJv+O89Ke2gQ==","buildHash":"CgVgtSpHoPZPkgJcSCwM7A=
+=","deviceProps":"CgdCYWlsZXlzGAcgAA=="}},"msg":"not logged in, attempting registration..."}
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀███▀ █▄█▄▀▀█    █ ▄▄▄▄ ██▀▄█▄█ ▄  ▀██ ▄▄▄▄▄ █
+█ █   █ █▀▀█▀ ▀▄▄▀▀▀███▄▄█▄▀█▄▄▄ ▄██ ▀ ██▄▀▀▄▀█ █   █ █
+█ █▄▄▄█ █▀█▄▄▄▀▀▀▀▀ ▄█▀ █ ▄▄▄ ▄▄ █▀▀█▀▄▀ ▄█ ███ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄▀▄█ █ ▀▄▀▄█▄▀ █ █▄█ ▀▄▀▄▀ █▄█ ▀ █ █▄█▄▄▄▄▄▄▄█
+█   ▄▄▀▄▄▄█  ▄▄▄▄▀▄  ▄▀█▀▄  ▄ ▀ ▄▀▄▄ ▄█▄▀█  ▀█▄█ █ ▀ ██
+██  ▄█ ▄█▀█ █▄▀▀▄  █   █▀ ▀██▀  ▀▄▀▄▄▄  ▄ ▄▀ █ ▀█▀█▄▀▀█
+█▀▄▀  ▀▄▄▀██▀█▄██▄▀▄ ███▄▀▀   █▀ █▄▄   ██▀ ▀▀▄█▄ ▄▄ ▀ █
+██▄█ ▄▄▄█▀██▄▄▀█▀▀ ▄▀█▄ █▀ ▄▀▀▄█▀▀ ▄ ▄██▄▀█ ▄█▄▄██▀█▀██
+██ ▀▄▄ ▄█▄█▄▀ ▀█▀█  ▀▄▀█ ▄▄▄ ▀▄  ▀▀▄▀▄ █▄▀  ▀▄█▄█▄█▄▀██
+█▀▀█▄▄ ▄    █▄▀ ▀█▄ ▀█▄█▀▀ ▄▄▀ ▀ ▄█▄ ▀▀▄▀ █▄▄██▄█▀▀█▀██
+███ ██ ▄   ▀▀█▄▀██▄▄ ▄█▀▀ ▀▄▄▀▀ ▄▀▄█ ▄█▄█▀  ▄▄▄█▄ ▄▀  █
+█▄▄   ▄▄█▀██▀ ▄ ▀▀▀▀ ▀▀▀▄▀█▄▄█▀ █ ▄▄█▄ ▄ ▀▀ ▄█  ▄█ █▀▀█
+███▄▀ ▄▄▄  ▀▀█▄▄▄▀ ▄ █▀█▄ ▄▄▄  ▀▄▀▄▄▀ ▀▄▄█▀▀█ ▄▄▄ ▄▄  █
+█  ██ █▄█ ██▀▄█ ▄ ▄██▄    █▄█ ▄▄█▀▄█▄▀▄▄█▀▀▄▄ █▄█  █▀██
+█▀██▀▄▄▄ ▄▀▄  ▀▀▄▄▄ ▀▄▀█ ▄   ▄▀▀ █▄▄  ▀▄█▀  ▄▄    ▀█▄▀█
+███▀█▀▀▄ ██▄██▀█▄▄▀▄█▀▀▄▀▄▄███▄███▄██▀▄▄▄█▄▀▀▀▀█   ▄▀██
+█▄▄▄██ ▄▀▀▄█▄▄▀█▀█▀▄▄▄▀▀▀▀▄█ ▀   ██▄▄▄▄▄▀▀  ██▄ █▀█▄▀██
+██▀█▀▄▄▄█▄█▀ ▄▀▀▀█▄█ █ ▄█▀ ▀██▀ █▀▀ ▄▄▄ ▄▀█▄▄▀▀▀ ▄ ▄▀▀█
+███ ▄▄▀▄█▄ ▀█▀▀▀▄▄▀▄ ████▄▄█  ▀▀▄███▄▄ █▄█▀ ▀▄▀ ▄▀▄█▄▀█
+█▀▀▀█▀▀▄▀ ▄▄  ▄ █  ▀▀█▀ █▄▀▀▄██▄  ▄█   ▄▄███▀▄█▀▄▄▀▄███
+█▄ ▀▄█▄▄▀ ▀▀▀▄▄▄▄▀█  ▄█▀██ ██▀ ▀█▀█▄▄  ▄███▀█▄ ▀▄▀ ▄█ █
+█▄ ▀▄▄▄▄▄██▀ ▄█▄▄ █▀▀█ ▄▀▀  ▄▄▀▄█▀█▄ ▄█▀██ █ ▀█▀█▄▀▄▄██
+████▄██▄▄ ██ ▀█▀▄▄ ▄▄▄███ ▄▄▄ ▀▀▀█▄█▄▄▀█▀█  ▀ ▄▄▄ ██  █
+█ ▄▄▄▄▄ █▄ ▀▀█▀█ ▄▄██   ▀ █▄█ ▄▄  ▄▄ ▄ ██▀█▀▄ █▄█  ██▀█
+█ █   █ █ ▄▀█  ▄▀█▄▀ █▀█▀  ▄  ▀▀▀█▄█▀  ▄▄█   ▄    █▄███
+█ █▄▄▄█ █   ▀█ █▀█▄ ▀▀ █▄▀█ ▀▀█▄▀  ▀█ ▀██ ▀ ▄▀▄█ ▄▄█▀▄█
+█▄▄▄▄▄▄▄█▄▄█▄▄██▄▄▄▄████▄▄▄████████▄▄▄▄▄██▄███▄▄█▄▄▄███
+
+{"level":30,"time":"2023-10-18T00:12:56.541Z","pid":12220,"hostname":"gimler-society","class":"baile
+ys","me":{"id":"6285641616352:4@s.whatsapp.net","name":"Lempita"},"platform":"smba","msg":"pairing c
+onfigured successfully, expect to restart the connection..."}
+{"level":50,"time":"2023-10-18T00:12:56.972Z","pid":12220,"hostname":"gimler-society","class":"baile
+ys","node":{"tag":"stream:error","attrs":{"code":"515"}},"msg":"stream errored out"}
+{"level":30,"time":"2023-10-18T00:12:56.973Z","pid":12220,"hostname":"gimler-society","class":"baile
+ys","trace":"Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (/home/gim
+ler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:5
+01:13)\n    at WebSocketClient.emit (node:events:513:28)\n    at /home/gimler/Desktop/application/ba
+ilyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:236:35\n    at Object.decod
+eFrame (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/U
+tils/noise-handler.js:136:17)\n    at WebSocketClient.onMessageRecieved (/home/gimler/Desktop/applic
+ation/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/socket.js:212:15)\n    at Web
+SocketClient.emit (node:events:513:28)\n    at WebSocket.<anonymous> (/home/gimler/Desktop/applicati
+on/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/Socket/Client/web-socket-client.js:46:1
+00)\n    at WebSocket.emit (node:events:513:28)\n    at Receiver.receiverOnMessage (/home/gimler/Des
+ktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/node_modules/ws/lib/websocket
+.js:1192:20)\n    at Receiver.emit (node:events:513:28)","msg":"connection errored"}
+connection closed due to  Error: Stream Errored (restart required)
+    at WebSocketClient.<anonymous> (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@
+whiskeysockets/baileys/lib/Socket/socket.js:501:13)
+    at WebSocketClient.emit (node:events:513:28)
+    at /home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeysockets/baileys/lib/So
+cket/socket.js:236:35
+    at Object.decodeFrame (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiskeyso
+ckets/baileys/lib/Utils/noise-handler.js:136:17)
+    at WebSocketClient.onMessageRecieved (/home/gimler/Desktop/application/bailyes-commerce/node_mod
+ules/@whiskeysockets/baileys/lib/Socket/socket.js:212:15)
+    at WebSocketClient.emit (node:events:513:28)
+    at WebSocket.<anonymous> (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@whiske
+ysockets/baileys/lib/Socket/Client/web-socket-client.js:46:100)
+    at WebSocket.emit (node:events:513:28)
+    at Receiver.receiverOnMessage (/home/gimler/Desktop/application/bailyes-commerce/node_modules/@w
+hiskeysockets/baileys/node_modules/ws/lib/websocket.js:1192:20)
+    at Receiver.emit (node:events:513:28) {
+  data: { tag: 'stream:error', attrs: { code: '515' }, content: undefined },
+  isBoom: true,
+  isServer: true,
+  output: {
+    statusCode: 515,
+    payload: {
+      statusCode: 515,
+      error: 'Unknown',
+      message: 'Stream Errored (restart required)'
+    },
+    headers: {}
+  }
+} ,  
+gimler@gimler-society:~/Desktop/application/bailyes-commerce$ node index.js
+{"level":30,"time":"2023-10-18T00:13:08.171Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","browser":["Baileys","Chrome","4.0.0"],"helloMsg":{"clientHello":{"ephemeral":"ZCvtNgmEgI19WSX2C
+YRXfKnAUBa8EL4oDeWEbWcsvH0="}},"msg":"connected to WA"}
+{"level":30,"time":"2023-10-18T00:13:08.406Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","node":{"username":"6285641616352","passive":true,"userAgent":{"platform":"MACOS","appVersion":{
+"primary":2,"secondary":2329,"tertiary":9},"mcc":"000","mnc":"000","osVersion":"0.1","manufacturer":
+"","device":"Desktop","osBuildNumber":"0.1","releaseChannel":"RELEASE","localeLanguageIso6391":"en",
+"localeCountryIso31661Alpha2":"US"},"connectType":"WIFI_UNKNOWN","connectReason":"USER_ACTIVATED","d
+evice":4},"msg":"logging in..."}
+{"level":30,"time":"2023-10-18T00:13:08.973Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"0 pre-keys found on server"}
+{"level":30,"time":"2023-10-18T00:13:08.973Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","count":30,"msg":"uploading pre-keys"}
+{"level":30,"time":"2023-10-18T00:13:09.330Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","count":30,"msg":"uploaded pre-keys"}
+{"level":30,"time":"2023-10-18T00:13:09.558Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"opened connection to WA"}
+opened connection
+{"level":30,"time":"2023-10-18T00:13:09.590Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"handled 0 offline messages/notifications"}
+Closing open session in favor of incoming prekey bundle
+Closing session: SessionEntry {
+  _chains: {
+    BS1mJErJzTYzRavhKFx4KzIOuXXOQh0pLTG9eKEqnoo9: { chainKey: [Object], chainType: 2, messageKeys: {
+} },
+    'BbtcuItVqeBYeByH25O2hJ/WZyxniPAV0zmIrCJ7b79L': { chainKey: [Object], chainType: 1, messageKeys:
+ {} }
+  },
+  registrationId: 1494233364,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 bb 5c b8 8b 55 a9 e0 58 78 1c 87 db 93 b6 84 9f d6 67 2c 67 88 f0 15 d3 39 
+88 ac 22 7b 6f bf 4b>,
+      privKey: <Buffer e0 00 23 88 de d3 a7 47 dc b6 43 8e 8b 10 55 2f 97 54 b0 90 05 65 a2 e3 ff 53
+ 21 4e 26 58 64 4d>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 2d 66 24 4a c9 cd 36 33 45 ab e1 28 5c 78 2b 32 0e b9 75 ce 4
+2 1d 29 2d 31 bd 78 a1 2a 9e 8a 3d>,
+    previousCounter: 0,
+    rootKey: <Buffer fc d6 b7 77 aa 72 a6 21 fb 59 a8 30 c0 72 d5 77 65 ca 40 2d b2 33 07 e4 f0 41 3
+d d8 87 92 c4 60>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 bc 35 11 3a aa 3e a4 55 7f 7b 87 4b c6 80 c8 f7 3a c3 6f 51 06 23 9b 98 60 d
+8 29 d5 9c 19 71 37>,
+    baseKeyType: 2,
+    closed: -1,
+    used: 1697587790344,
+    created: 1697587790344,
+    remoteIdentityKey: <Buffer 05 b3 be e5 a8 23 66 35 55 14 31 b9 81 cf a5 e8 d0 4a 67 6d 81 c9 76 
+d3 d9 30 eb 45 8b b0 c2 b4 26>
+  }
+}
+{"level":30,"time":"2023-10-18T00:13:11.761Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","newAppStateSyncKeyId":"AAAAAF7J","newKeys":["AAAAAF7J"],"msg":"injecting new app state sync key
+s"}
+{"level":30,"time":"2023-10-18T00:13:12.856Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"doing initial app state sync"}
+{"level":30,"time":"2023-10-18T00:13:12.857Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"NxNmy97OHVTpvjaj19/Vo++VySfHtgIDK0kiyd3fjo8=","fileLength":"10
+","mediaKey":"QzBGUAaLcb0m2t6aYX4pip6fJxDCCq+5YXxdxNeiroM=","fileEncSha256":"yneWWfjTqGsiEv9ovOEXTkH
++AtImRwShn3KOLRyuF7I=","directPath":"/v/t62.31111-24/12089403_366609229034090_7069531869152242294_n.
+enc?ccb=11-4&oh=01_AdRF77plduf7g40TLmI5vNlf4aitGktj2hIGo91Y2VpJ7Q&oe=655687FF&_nc_sid=000000","syncT
+ype":"NON_BLOCKING_DATA"},"process":false,"id":"99CA89D59F6488B4B23429D4F3E6BE4D","isLatest":true,"m
+sg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:13:12.859Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing critical_block from v4"}
+{"level":30,"time":"2023-10-18T00:13:12.860Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing critical_unblock_low from v6"}
+{"level":30,"time":"2023-10-18T00:13:12.861Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular_high from v2"}
+{"level":30,"time":"2023-10-18T00:13:12.862Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular_low from v4"}
+{"level":30,"time":"2023-10-18T00:13:12.864Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular from v12"}
+{"level":30,"time":"2023-10-18T00:13:13.152Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"Dkz0UDP7mcehngS0gGsvG5+AMt/EXgSRgfazdoKo/ME=","fileLength":"10
+","mediaKey":"H4g066fZgkqAvkLEuYo8g7uceEVrHj83ZYM69ux9zgk=","fileEncSha256":"OaXnxQbR3ItoaZKgFGNamla
++83URGirkAWzPxOZihyk=","directPath":"/v/t62.31111-24/19433103_1056873222015117_3756404483624984843_n
+.enc?ccb=11-4&oh=01_AdT0cAKwTMZux0OzVch3-JQRXBGr0Dvf9FWTH_geYpW_nA&oe=65569477&_nc_sid=000000","sync
+Type":"INITIAL_STATUS_V3"},"process":false,"id":"3CA010BF0A16104C48F48290E1DA7DD8","isLatest":true,"
+msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:13:13.156Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"25XOFiFqHXv1E+frxEU1HMvHqIxtzG8mdMWSdGoqq7E=","fileLength":"11
+144","mediaKey":"GNp+o8iObjIhmZsQZWpWt6bqH3jwF2XFvpo0WBuTzx8=","fileEncSha256":"sHmVeQHZMFMnYUdEXM45
+sB8C1ciNNtT29Gfzho+Q4tc=","directPath":"/v/t62.31111-24/30024299_1377869609773138_834111037072570896
+9_n.enc?ccb=11-4&oh=01_AdQkSj96MoiLUlr672xX6Ie69G_6LQv9QZGmdJOYJvol1Q&oe=65569481&_nc_sid=000000","s
+yncType":"INITIAL_BOOTSTRAP"},"process":true,"id":"6796E341955F77D1C8C3A343D10FCC7A","isLatest":true
+,"msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:13:13.574Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing critical_block from v4"}
+{"level":30,"time":"2023-10-18T00:13:14.405Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular from v12"}
+{"level":30,"time":"2023-10-18T00:13:19.717Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"9sc0AG6SKcCIq8gxFfbUvO3fj2yVkur2qYRXYCTnFZ0=","fileLength":"13
+5","mediaKey":"irT4yj2+9bJZFVcxso2toTAb/Z17eYl+Hs7l7fhnEKQ=","fileEncSha256":"I5hwevkx2IzDAM/bPfCiPy
+JH9LVrpluJYlFcPy4aRM8=","directPath":"/v/t62.31111-24/382929545_147839921744033_7528370590679451518_
+n.enc?ccb=11-4&oh=01_AdQjPOG3dnY3nbuZog9EpUwZi7xMFc1wZBcrtHv63WJRDA&oe=6556876B&_nc_sid=000000","syn
+cType":"PUSH_NAME","chunkOrder":1},"process":true,"id":"0C65B043CA253F9CA1883454716C8ADB","isLatest"
+:false,"msg":"got history notification"}
+{"level":30,"time":"2023-10-18T00:13:20.031Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","msg":"resyncing regular from v12"}
+{"level":30,"time":"2023-10-18T00:13:20.336Z","pid":12233,"hostname":"gimler-society","class":"baile
+ys","histNotification":{"fileSha256":"Q8ChIo1tsPTdi4bO5iaJosnxDlIEVCv7RntNJnP0g7M=","fileLength":"83
+74","mediaKey":"j/195IsYHtGZx0xOVThojLvrHiWMoTcQT22ko0lTWy8=","fileEncSha256":"ZrVkvU9COQErlC6LEUadW
+dwntl7s+taE5zFF5pH2bn8=","directPath":"/v/t62.31111-24/20095429_321629780512139_8645491607156474613_
+n.enc?ccb=11-4&oh=01_AdQLV3IOZ0h4vaLJ8RRBTpxvCAvWvW_UobHGEN0z5iXK_Q&oe=65567BB8&_nc_sid=000000","syn
+cType":"RECENT","chunkOrder":1,"progress":100,"oldestMsgInChunkTimestampSec":"1685857098"},"process"
+:true,"id":"547D5756C72731E62E14F8C385B80AE0","isLatest":false,"msg":"got history notification"}
+Pesan Masuk dari 6283109895990@s.whatsapp.net dengan pesan jdhdjd
+Pesan Masuk dari 6283109895990@s.whatsapp.net dengan pesan /help
+{
+  key: {
+    remoteJid: '6283109895990@s.whatsapp.net',
+    fromMe: false,
+    id: '96CD457DBA12F5588AD8D5A9B725C47A',
+    participant: undefined
+  },
+  messageTimestamp: 1697588018,
+  pushName: 'https://rifalkom.my.id',
+  broadcast: false,
+  message: Message {
+    conversation: '/help',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  }
+}
+
